@@ -36,9 +36,9 @@ useEffect (function() {
       <div className='flex flex-wrap gap-4 p-4'>
         {printUserData}
       </div>
-      <h1 className='felx text-2xl'>Page {index}</h1>
+      
       <div className='flex justify-center items-center p-4'>
-        <button className='bg-white text-black px-4 py-2 rounded-lg cursor-pointer active:scale-95'
+        <button className='bg-amber-400 text-black px-4 py-2 rounded-lg cursor-pointer active:scale-95'
           onClick={()=>{
             if(index > 1){
               setindex(index - 1)
@@ -46,8 +46,10 @@ useEffect (function() {
           setUserdata([])
               
           }}>Prev
+        
         </button>
-        <button className='bg-white text-black px-4 py-2 rounded-lg mx-4 cursor-pointer active:scale-95'
+        <h1 className='felx  flex justify-content bg-black rounded-b-lg p-4'>Page {index} </h1>
+        <button className='bg-amber-400 text-black px-4 py-2 rounded-lg mx-4 cursor-pointer active:scale-95'
             onClick={()=>{
               setindex(index + 1)
               setUserdata([])
